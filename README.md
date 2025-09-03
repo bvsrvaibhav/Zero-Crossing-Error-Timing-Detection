@@ -25,6 +25,7 @@ ZCTED Calculation
 The detector uses the formula:
 
  e(k)=I[n−1]⋅(sgn(I[n])−sgn(I[n−2]))
+ 
 I[n]: Current interpolated sample
 
 I[n−1],I[n−2]: Delayed samples
