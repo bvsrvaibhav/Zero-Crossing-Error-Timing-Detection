@@ -24,61 +24,11 @@ Produces fractional sample values of the incoming I/Q signals, allowing fine adj
 ZCTED Calculation
 The detector uses the formula:
 
-𝑒
-(
-𝑘
-)
-=
-𝐼
-[
-𝑛
-−
-1
-]
-⋅
-(
-sgn
-(
-𝐼
-[
-𝑛
-]
-)
-−
-sgn
-(
-𝐼
-[
-𝑛
-−
-2
-]
-)
-)
-e(k)=I[n−1]⋅(sgn(I[n])−sgn(I[n−2]))
-
-𝐼
-[
-𝑛
-]
+# e(k)=I[n−1]⋅(sgn(I[n])−sgn(I[n−2]))
 I[n]: Current interpolated sample
-
-𝐼
-[
-𝑛
-−
-1
-]
-,
-𝐼
-[
-𝑛
-−
-2
-]
 I[n−1],I[n−2]: Delayed samples
-
 sgn(x): Sign function (+1, -1, or 0)
+
 
 This measures whether the samples are aligned with the expected zero-crossings.
 
